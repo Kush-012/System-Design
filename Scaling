@@ -1,0 +1,13 @@
+Scaling means increasing system capacity to handle more traffic and users.
+Horizontal scaling vs Vertical scaling
+
+Vertical scaling means adding more power to your servers.
+                  single point of failure
+                   data is consistent 
+                    load balancer not required
+                   1 huge box
+Horizontal scaling means adding more servers to your resources.
+                  resilent
+                   data is not consistent 
+                   require load balancer
+                    
