@@ -1,0 +1,47 @@
+UML is a unified modelling language which is a way of visualising and documenting the software by set of diagrams.
+
+Use case diagram
+class diagram
+activity diagram
+sequence diagram
+
+
+Use Case diagram: It describes functionality of a system. 
+Components are: 
+  Actors: customer, guest
+  system boundary
+  include=>calling other function
+  extend=> include base+some extended features
+
+Class diagram: How different entities related to each other
+Structure:
+-----------------
+| Class Name    |
+-----------------
+| Properties    |
+-----------------
+| Methods       |
+-----------------
+
+Relationships:
+
+Association:  A and B call each other (bidirectional A----B)  unidirectional (A-->B) A can call B but not B call A   
+Aggregation: A ◇──── B  B can exist without A
+Composition: A ◆──── B  B can't exist without A
+Multiplicity like *--1   2---1
+Generalisation: A implements B (interfaces)
+Inheritance: A inherits B
+
+
+Sequence diagram:
+It describes interactions among classes for exchange of messages over time.
+
+Activity diagram:
+It represents flow of control in system.
+It uses diamonds,start,stop symbols.
+
+
+
+
+
+
