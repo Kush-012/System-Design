@@ -1,0 +1,41 @@
+Load balancer evenly distributes traffic to different web servers
+
+
+As traffic increases:
+- A single server becomes overloaded.
+- Response time increases.
+- System may crash.
+
+
+server = hash(requestID) % N
+Where:
+- N = number of servers
+
+Example:
+If N = 4:
+server = hash(requestID) % 4
+
+This distributes requests across servers roughly evenly.
+
+Now you add one more server:
+N = 5 servers
+server = hash(requestID) % 5
+
+
+Problem:
+- The modulo value changes.
+- Almost all request-to-server mappings change.
+- Requests that earlier went to Server 2 may now go to Server 4.
+- Cached data on old servers becomes useless.
+- System experiences heavy cache invalidation.
+- Performance drops significantly.
+
+
+Basic hashing works for distributing load.
+
+But when servers are added or removed:
+- Standard modulo-based hashing breaks.
+- It causes large-scale redistribution.
+- It invalidates cache.
+
+This causes a full reshuffling of users across servers.
