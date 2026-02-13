@@ -1,0 +1,10 @@
+Imagine a pizza shop where customers place orders and don’t wait in the kitchen while it’s being prepared.
+The order is written down and placed on a board — this board acts like a message queue.
+The customer (producer) can leave and do other things instead of waiting, which represents asynchronous processing.
+Chefs (consumers/workers) pick orders from the board one by one and prepare them.
+If more customers come, the shop can hire more chefs — this is horizontal scaling.
+If one chef gets sick, another chef picks up the pending orders — this provides fault tolerance.
+The order board keeps all orders safe until they are completed — this is persistence.
+Orders are distributed among chefs automatically — this ensures load balancing.
+The system checks if chefs are active; if not, their tasks are reassigned — this is the heartbeat mechanism.
+Just like the pizza shop runs smoothly without chaos, a message queue manages tasks efficiently in distributed systems.
