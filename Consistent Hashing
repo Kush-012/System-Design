@@ -1,0 +1,4 @@
+Consistent hashing is a technique used in distributed systems to evenly distribute data across multiple servers using a circular hash ring. 
+Both servers and keys are mapped onto the ring, and each key is assigned to the nearest server in the clockwise direction. When a server is added or removed, 
+only a small portion of keys are remapped, minimizing disruption. To prevent data loss, consistent hashing is combined with replication, where data is stored on multiple consecutive servers. 
+If one server crashes, a replica server automatically serves the requests. This makes the system scalable, fault-tolerant, and efficient for load balancing.
